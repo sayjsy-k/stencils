@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>PWA Toolkit</title>
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Welcome to the Ionic PWA Toolkit. You can use this starter to build fast PWAs using Ionic and Stencil!">
+  <meta name="theme-color" content="#16161d">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ionic PWA">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+
+  <link href="/build/app.css" rel="stylesheet">
+  <script src="/build/app.js"></script>
+
+  <link rel="apple-touch-icon" href="/assets/icon/icon.png">
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    body, html{
+      font-family: sans-serif;
+    }
+    .my-button{
+      background: #0089ff;
+      color:#fff;
+      border:0;
+      height:50px;
+      width: 150px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 4px;
+      margin:64px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button class="my-button">Open Button</button>
+<my-modal title="Info" content="this is very important information"></my-modal>
+<!-- <my-backdrop></my-backdrop> -->
+
+
+<script>
+var btn = document.querySelector('button');
+var modal = document.querySelector('my-modal');
+btn.addEventListener('click',function(){
+//modal.style.display = "block";
+modal.open();
+})
+</script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+my-modal{
+  font-family: Arial,  sans-serif;
+  border:1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+  background: white;
+  position:fixed;
+  top:30px;
+  left: calc(50% - 175px);
+  z-index:1000;
+  padding: 20px;
+  display:none;
+
+}
+
+.button1{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:green;
+  background:yellow;
+  font:inherit;
+  cursor:pointer;
+  color: grey;
+  border:1px solid orange;
+ }
